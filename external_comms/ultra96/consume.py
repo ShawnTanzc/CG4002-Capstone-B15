@@ -6,7 +6,7 @@ import requests
 import json
 
 # Access the CLODUAMQP_URL environment variable and parse it (fallback to localhost)
-url = 'amqp://irbtroao:L4MSsACucAWueNiBrRY5_tqU50agWjFi@armadillo.rmq.cloudamqp.com/irbtroao'
+url = 'INSERT URL'
 params = pika.URLParameters(url)
 connection = pika.BlockingConnection(params)
 

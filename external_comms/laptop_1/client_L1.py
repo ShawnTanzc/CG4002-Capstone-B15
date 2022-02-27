@@ -25,8 +25,8 @@ def sshCommand(hostname, port, username, password, command):
 #
 # server = SSHTunnelForwarder(
 #     'sunfire.comp.nus.edu.sg',
-#     ssh_username="shawntan",
-#     ssh_password="stzc@S9817869D",
+#     ssh_username="USERNAME",
+#     ssh_password="PASSWORD",
 #     remote_bind_address=('127.0.0.1', 8080)
 # )
 #
