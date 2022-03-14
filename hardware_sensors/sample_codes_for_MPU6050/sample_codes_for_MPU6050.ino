@@ -11,7 +11,7 @@ MPU6050 accelgyro;
 
 int16_t ax, ay, az;
 int16_t gx, gy, gz;
-int imu_delay = 1; //delay in ms
+int imu_delay = 10; //delay in ms
 int imu_sample_size = 5; //freq = 1000/(imu_delay*imu_sample_size) Hz
 
 #define OUTPUT_READABLE_ACCELGYRO
@@ -93,9 +93,9 @@ void loop() {
     avg_gy = total_gy/imu_sample_size;
     avg_gz = total_gz/imu_sample_size;
     Serial.print("a/g:\t");
-    Serial.print("avg_ax:"); Serial.print(avg_ax); Serial.print("\t\t");
-    Serial.print("avg_ay:");Serial.print(avg_ay); Serial.print("\t\t");
-    Serial.print("avg_az:");Serial.print(avg_az); Serial.print("\t\t");
+    //Serial.print("avg_ax:"); Serial.print(avg_ax); Serial.print("\t\t");
+    //Serial.print("avg_ay:");Serial.print(avg_ay); Serial.print("\t\t");
+    //Serial.print("avg_az:");Serial.print(avg_az); Serial.print("\t\t");
     Serial.print("avg_gx:");Serial.print(avg_gx); Serial.print("\t\t");
     Serial.print("avg_gy:");Serial.print(avg_gy); Serial.print("\t\t");
     Serial.print("avg_gz:");Serial.println(avg_gz);

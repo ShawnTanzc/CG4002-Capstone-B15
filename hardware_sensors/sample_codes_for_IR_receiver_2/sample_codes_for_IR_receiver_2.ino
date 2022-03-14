@@ -9,6 +9,7 @@
 TM1637 tm(CLK,PIN_LED);
 int HEALTH_COUNT = 100; //initialises health count
 
+
 void setup()  
 {  
   Serial.begin(9600); //initialize serial connection to print on the Serial Monitor of the Arduino IDE
@@ -32,8 +33,9 @@ void loop()
     //IrReceiver.printIRResultShort(&Serial); // Prints a summary of the received data
     //Serial.println();
     //IrReceiver.resume(); 
+    
 
-    if (IrReceiver.decodedIRData.protocol != UNKNOWN && IrReceiver.decodedIRData.command == 0x33) {
+    if (IrReceiver.decodedIRData.protocol != UNKNOWN && IrReceiver.decodedIRData.command == 0x34) {
       IrReceiver.printIRResultShort(&Serial); // If data received is in proper packet format
       Serial.println();
 

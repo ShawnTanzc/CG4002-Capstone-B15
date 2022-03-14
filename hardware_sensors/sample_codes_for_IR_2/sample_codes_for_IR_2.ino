@@ -33,7 +33,7 @@ void loop()
 
   
   if (switch_value == 0) {
-    IrSender.sendNEC(0x0102, 0x33, true, 0); // the address 0x0102 with the command 0x33 is sent 
+    IrSender.sendNEC(0x0102, 0x34, true, 0); // the address 0x0102 with the command 0x34 is sent 
     AMMO_COUNT -= 1;
 
     
